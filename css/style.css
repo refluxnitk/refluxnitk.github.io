@@ -13,6 +13,12 @@
   
 }
 
+@media only screen and (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+}
+
 /*---Global---*/
 html, body{
   height: 100%;
