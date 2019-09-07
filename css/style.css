@@ -155,6 +155,21 @@ ul.timeline > li:before {
   padding-top: 2rem;
 }
 
+.card-body{
+  background: #000;
+}
+
+.card-title, .btn{
+  color: white;
+}
+
+.btn-outline-secondary{
+  border: 0.03em solid white;
+}
+.card{
+  border: 0.1em solid #ffae00;
+}
+
 
 
 
