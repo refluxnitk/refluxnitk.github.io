@@ -221,7 +221,13 @@ hr.light{
 
 
 
+.bar img{
+  width: 200px;
+  height: 200px;
+  margin-left: 20%;
+  /*padding-left: 100px;*/
 
+}
 
 
 

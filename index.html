@@ -27,11 +27,16 @@
 			x.style.display = "block";
 			x = document.getElementById("youtube");
 			x.style.display = "block";
+			x = document.getElementById("barcodes");
+			x.style.display = "none";
 			var y = document.getElementById("Abouthead");
 			y.innerHTML = "WHAT'S REFLUX?";
 			var z = document.getElementById("Aboutbody");
 			z.innerHTML = "Engineer is the annual technical symposium of National Institute Of Technology Karnataka, Surathkal which has been organized since 2005 and is one of the largest of its kind in India. In the past, Engineer brought organizations such as CERN, MIT Media and Bell labs together while catering to a participation pool of over 6000 students from 150 colleges across 65 countries.<br><br>Bringing to you again this Engineer, Reflux 2.0, a coalescence of celebration and learning, conducts various events in the spirit of Chemical Engineering to create awareness of it's diversity and the opportunities in the field<br><br>We are collaborating with industry and academia like never before. Reflux is an event with something for every budding Chemical and Mechanical Engineer. Whoever thought Chemical Engineering isn't fun is in for a surprise!"
 			// x.style.display = "block";
+
+			var u = document.getElementById("up");
+			u.innerHTML = "<li><a style='color: #fff'>1 September, 2019</a><br><b><h5><i><a>Reflux website launched</a></i></h5></b><p>The official website for Reflux Committee 2019 has been launched</p></li><li><b><h5><i><a>Registrations</a></i></h5></b><p>Registrations start from 10th of September. Follow our <a href='#contact'> social media handles</a> for further updates</p></li>";
 			
 		}
 		function Func(n)
@@ -49,12 +54,24 @@
 			x.style.display = "none";
 			x = document.getElementById("youtube");
 			x.style.display = "none";
-			// x = document.getElementById("eventcards");
-			// x.style.display = "none";
+			x = document.getElementById("barcodes");
+			x.style.display = "block";
 			var y = document.getElementById("Abouthead");
 			y.innerHTML = head[n - 1];
 			var z = document.getElementById("Aboutbody");
 			z.innerHTML = content[n - 1];
+
+
+			upd = [
+				"<li><a style='color: #fff'>2 September, 2019</a><br><b><h5><i><a>Reflux website launched</a></i></h5></b><p>The official website for Reflux Committee 2019 has been launched</p></li>",
+				"<li><a style='color: #fff'>1 September, 2019</a><br><b><h5><i><a>Reflux website launched</a></i></h5></b><p>The official website for Reflux Committee 2019 has been launched</p></li>", 
+				"<li><a style='color: #fff'>1 September, 2019</a><br><b><h5><i><a>Reflux website launched</a></i></h5></b><p>The official website for Reflux Committee 2019 has been launched</p></li>",
+				"<li><a style='color: #fff'>3 September, 2019</a><br><b><h5><i><a>Reflux website launched</a></i></h5></b><p>The official website for Reflux Committee 2019 has been launched</p></li>",
+				"<li><a style='color: #fff'>1 September, 2019</a><br><b><h5><i><a>Reflux website launched</a></i></h5></b><p>The official website for Reflux Committee 2019 has been launched</p></li>"
+			]
+			var u = document.getElementById("up");
+			u.innerHTML = upd[n - 1];
+
 		}
 		function contact()
 		{
@@ -160,6 +177,11 @@
 		</div>
 		<hr>
 
+		<!-- Barcodes -->
+		<div class="bar" id="barcodes">
+			<img src="img/bar1.png">
+			<img src="img/bar1.png">
+		</div>
 
 
 		<!---Updates-->
@@ -167,27 +189,22 @@
 			<div class="row">
 				<div class="col-xs-12 col-s-12 col-md-12">
 					<h3 class="display-4">Updates</h3>
-					<ul class="timeline">
-						<li>
+					<ul class="timeline" id="up">
+						<!-- <li>
 							<a style="color: #fff">1 September, 2019</a><br>
 							<b><h5><i><a>Reflux website launched</a></i></h5></b>
 							<p>The official website for Reflux Committee 2019 has been launched</p>
 						</li>
 						<li>
 							<b><h5><i><a>Registrations</a></i></h5></b>
-							<!-- <a class="float-right">02 October 2019</a> -->
 							<p>Registrations start from 10th of September. Follow our <a href="#contact"> social media handles</a> for further updates</p>
-						</li>
-<!-- 						<li>
-							<a>Update 3</a>
-							<a class="float-right">21 September, 2019</a>
-							<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
 						</li> -->
 					</ul>
 				</div>
 			</div>
 		</div>
 		<hr>
+
 
 
 		<!---Event Cards-->
