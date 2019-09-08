@@ -222,13 +222,22 @@ hr.light{
 
 
 .bar img{
-  width: 200px;
-  height: 200px;
-  margin-left: 20%;
+  width: 250px;
+  height: 250px;
+  margin-left: 15%;
+  padding: 20px;
   /*padding-left: 100px;*/
-
 }
 
+@media (max-width: 364px) {
+  .bar img{
+    width: 150px;
+    height: 150px;
+    margin-left: 15%;
+    padding: 10px;
+    
+  }
+}
 
 
 
